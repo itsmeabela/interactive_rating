@@ -1,0 +1,98 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(219, 13%, 31%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background-color: var(--very-dark-blue);
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  margin-top: 2em;
+  color: var(--white);
+}
+.hidden {
+  display: none;
+}
+.container {
+  background-color: var(--dark-blue);
+  max-width: 30%;
+  margin: 10% auto;
+  border-radius: 10px;
+  padding: 2em;
+}
+p {
+  color: var(--light-grey);
+  line-height: 1.5em;
+}
+.attribution {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.rate-btn {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.btn {
+  color: var(--white);
+  transition: 0.3s background ease-in-out;
+}
+.btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.btn:active {
+  background: var(--light-grey);
+  color: var(--white);
+}
+.gray-circle {
+  background-color: var(--medium-grey);
+  padding: 1em 1.3em;
+  margin-right: 0.5em;
+  border-radius: 50%;
+}
+.submit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.submit-btn {
+  padding: 0.5em;
+  margin-top: 3em;
+  padding: 0.5em 10em;
+  border-radius: 50px;
+  color: var(--white);
+  background-color: var(--orange);
+  border: none;
+  transition: 0.5s background;
+}
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+.thanks-container {
+  text-align: center;
+}
+.selection {
+  font-size: larger;
+  color: var(--orange);
+  padding: 0.5em;
+  border-radius: 50px;
+  background: var(--medium-grey);
+}
