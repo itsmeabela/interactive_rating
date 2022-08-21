@@ -34,7 +34,7 @@
     <!-- Rating state start -->
 
     <div class="container">
-      <div class="rating">
+      <div id="rate-field" class="rating">
         <span style="padding: 1em"
           ><img src="./images/icon-star.svg" alt=""
         /></span>
@@ -51,11 +51,11 @@
           <span class="gray-circle btn">5</span>
         </div>
         <div class="submit-container">
-          <button class="submit-btn">SUBMIT</button>
+          <button type="button" id="submit" class="submit-btn">SUBMIT</button>
         </div>
       </div>
 
-      <div class="thanks-container hidden">
+      <div id="submit-field" class="thanks-container hidden">
         <div class="submit-img">
           <img
             src="./images/illustration-thank-you.svg"
@@ -64,7 +64,7 @@
           />
         </div>
         <p class="selection">
-          You selected <span id="selected"></span> out of <span>4</span>
+          You selected <span id="result"></span> out of <span>5</span>
         </p>
         <h2>Thank you!</h2>
         <p>

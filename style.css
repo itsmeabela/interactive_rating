@@ -29,7 +29,7 @@ h2 {
 }
 .container {
   background-color: var(--dark-blue);
-  max-width: 30%;
+  max-width: min-content;
   margin: 10% auto;
   border-radius: 10px;
   padding: 2em;
@@ -87,6 +87,10 @@ p {
   color: var(--orange);
 }
 .thanks-container {
+  min-width: 16em;
+  text-align: justify;
+}
+.thanks-container h2 {
   text-align: center;
 }
 .selection {
