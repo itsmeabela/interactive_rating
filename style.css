@@ -30,9 +30,20 @@ h2 {
 .container {
   background-color: var(--dark-blue);
   max-width: min-content;
-  margin: 10% auto;
+  margin: 50% auto;
   border-radius: 10px;
   padding: 2em;
+  animation: flow 2s forwards;
+}
+@keyframes flow {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 p {
   color: var(--light-grey);
@@ -56,6 +67,7 @@ p {
   background-color: var(--orange);
   color: var(--white);
 }
+
 .btn:active {
   background: var(--light-grey);
   color: var(--white);
@@ -87,7 +99,7 @@ p {
   color: var(--orange);
 }
 .thanks-container {
-  min-width: 16em;
+  min-width: 20em;
   text-align: justify;
 }
 .thanks-container h2 {
