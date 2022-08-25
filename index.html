@@ -33,55 +33,61 @@
   </head>
   <body>
     <!-- Rating state start -->
+    <main>
+      <section>
+        <div class="container">
+          <div id="rate-field" class="rating">
+            <span style="padding: 1em"
+              ><img src="./images/icon-star.svg" alt=""
+            /></span>
+            <h2>How did we do?</h2>
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+            <div class="rate-btn">
+              <button class="gray-circle btn">1</button>
+              <button class="gray-circle btn">2</button>
+              <button class="gray-circle btn">3</button>
+              <button class="gray-circle btn">4</button>
+              <button class="gray-circle btn">5</button>
+            </div>
+            <div class="submit-container">
+              <button type="button" id="submit" class="submit-btn">
+                SUBMIT
+              </button>
+            </div>
+          </div>
 
-    <div class="container">
-      <div id="rate-field" class="rating">
-        <span style="padding: 1em"
-          ><img src="./images/icon-star.svg" alt=""
-        /></span>
-        <h2>How did we do?</h2>
-        <p>
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-        <div class="rate-btn">
-          <button class="gray-circle btn">1</button>
-          <button class="gray-circle btn">2</button>
-          <button class="gray-circle btn">3</button>
-          <button class="gray-circle btn">4</button>
-          <button class="gray-circle btn">5</button>
+          <div id="submit-field" class="thanks-container hidden">
+            <div class="submit-img">
+              <img
+                src="./images/illustration-thank-you.svg"
+                alt=""
+                style="text-align: center"
+              />
+            </div>
+            <p class="selection">
+              You selected <span id="result"></span> out of <span>5</span>
+            </p>
+            <h2>Thank you!</h2>
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch! button
+            </p>
+          </div>
         </div>
-        <div class="submit-container">
-          <button type="button" id="submit" class="submit-btn">SUBMIT</button>
+      </section>
+      <section>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="mailto:abelrobel7@gmail.com" target="_top">@itsmeabela</a>.
         </div>
-      </div>
-
-      <div id="submit-field" class="thanks-container hidden">
-        <div class="submit-img">
-          <img
-            src="./images/illustration-thank-you.svg"
-            alt=""
-            style="text-align: center"
-          />
-        </div>
-        <p class="selection">
-          You selected <span id="result"></span> out of <span>5</span>
-        </p>
-        <h2>Thank you!</h2>
-        <p>
-          We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch! button
-        </p>
-      </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="mailto:abelrobel7@gmail.com" target="_top">@itsmeabela</a>.
-    </div>
+      </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
