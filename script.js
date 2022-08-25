@@ -3,6 +3,9 @@ const result = document.getElementById("result");
 const submitBtn = document.getElementById("submit");
 const rate = document.getElementById("rate-field");
 const submit = document.getElementById("submit-field");
+
+//loop through the button for eventListeer
+
 for (let i = 0; i < selection.length; i++) {
   const element = selection[i];
   element.addEventListener("click", () => {
